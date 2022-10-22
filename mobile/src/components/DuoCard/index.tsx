@@ -21,8 +21,6 @@ interface Props {
 }
 
 export function DuoCard({ data, onConnect }: Props) {
-  console.log("BANAAN ", data, data.weekDays);
-
   return (
     <View style={styles.container}>
       <DuoInfo label="Nome" value={data.name} />

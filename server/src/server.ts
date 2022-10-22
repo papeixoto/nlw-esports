@@ -80,7 +80,7 @@ app.post("/games/:id/ads", async (req, res) => {
   res.json(ad);
 });
 
-app.post("/ads/:id/discord", async (req, res) => {
+app.get("/ads/:id/discord", async (req, res) => {
   const adId = req.params.id;
 
   const ad = await prisma.ad.findUniqueOrThrow({
